@@ -1,0 +1,6 @@
+.env
+study_env/
+__pycach__
+logs/
+studdy_buddy.egg-info/
+results/
