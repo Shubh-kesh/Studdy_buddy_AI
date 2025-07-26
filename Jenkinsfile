@@ -31,15 +31,15 @@ pipeline {
                 }
             }
         }
-        stage('Update Deployment YAML with New Tag') {
-            steps {
-                script {
-                    sh """
-                    sed -i 's|image: shubhkesh/studdybuddy:.*|image: shubhkesh/studdybuddy:${IMAGE_TAG}|' manifests/deployment.yaml
-                    """
-                }
-            }
-        }
+        // stage('Update Deployment YAML with New Tag') {
+        //     steps {
+        //         script {
+        //             sh """
+        //             sed -i 's|image: shubhkesh/studdybuddy:.*|image: shubhkesh/studdybuddy:${IMAGE_TAG}|' manifests/deployment.yaml
+        //             """
+        //         }
+        //     }
+        // }
 
         // stage('Commit Updated YAML') {
         //     steps {
