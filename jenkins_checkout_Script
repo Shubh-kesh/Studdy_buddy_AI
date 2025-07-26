@@ -1,3 +1,0 @@
-checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-token', url: 'https://github.com/Shubh-kesh/Studdy_buddy_AI.git']])
-
-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
