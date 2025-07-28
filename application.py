@@ -9,7 +9,7 @@ load_dotenv()
 logger = get_logger(__name__)
 
 def main():
-    st.set_page_config(page_title="Studdy Buddy AI", page_icon="$$")
+    st.set_page_config(page_title="Quiz AI", page_icon="$$")
     
 
 
