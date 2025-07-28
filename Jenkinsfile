@@ -40,17 +40,17 @@ pipeline {
                 }
             }
         }
-        
+
         stage('Commit Updated YAML') {
             steps {
                 script {
-                    withCredentials([usernamePassword(credentialsId: 'github-token', usernameVariable: 'GIT_USER', passwordVariable: 'GIT_PASS')]) {
+                    withCredentials([usernamePassword(credentialsId: 'github-token', usernameVariable: 'GIT_USER', passwordVariable: 'GIT_TOKEN')]) {
                         sh '''
                         git config user.name "shubhkesh"
                         git config user.email "shubhanshkesharwani4@gmail.com"
                         git add manifest/deployment.yaml
                         git commit -m "Update image tag to ${IMAGE_TAG}" || echo "commit"
-                        git push https://${GIT_USER}:${GIT_PASS}@github.com/Shubh-kesh/Studdy_buddy_AI.git HEAD:main
+                        git push https://${GIT_USER}:${GIT_TOKEN}@github.com/Shubh-kesh/Studdy_buddy_AI.git HEAD:main
                         '''
                     }
                 }
