@@ -26,7 +26,7 @@ def main():
     if 'rerun_trigger' not in st.session_state:
         st.session_state.rerun_trigger = False
 
-    st.title("Quiz Generator")
+    st.title("Quiz Generator AI")
     st.write("Welcome to the Studdy Buddy AI Quiz Generator and Quizzer. This application is designed to help you generate quizzes and take quizzes on a variety of topics. You can create quizzes for yourself or share them with others. The application is built using Streamlit, a Python library for building web applications.")
 
     st.sidebar.header("Quiz Settings")
